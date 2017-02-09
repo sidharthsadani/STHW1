@@ -1,0 +1,11 @@
+1. Range Filtering
+2. Jitter
+
+3. Smoothing vs Range Filtering
+4. N/A we should smooth
+
+
+Questions :
+Partial Acceptance of time series
+Should we interpolate at all
+
