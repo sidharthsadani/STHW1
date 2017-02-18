@@ -88,7 +88,7 @@ for(signal in Signals){
 				next
 			}
 			# Perform Signal Quality Analysis
-			SigAnalysis()
+			# SigAnalysis()
 			# And Update Entry 1 - Valid, -1 - Invalid
 			df_List[[signal]][ctr] = 1
 			ctr = ctr + 1
