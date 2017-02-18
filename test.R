@@ -101,10 +101,10 @@ for(signal in Signals){
 	iter = iter + 1
 }
 
-#df_Table = data.frame(df_List)
-#df_Table = df_Table[-1,]
+df_Table = data.frame(df_List)
+df_Table = df_Table[-1,]
 # print(df_Table)
 
 ## Write to the excel file
-#write.xlsx(df_Table, 'IdxTable.xlsx', sheetName='Sheet1', col.names=TRUE, row.names=TRUE, append=FALSE, showNA = TRUE)
+write.xlsx(df_Table, 'IdxTable.xlsx', sheetName='Sheet1', col.names=TRUE, row.names=TRUE, append=FALSE, showNA = TRUE)
 
