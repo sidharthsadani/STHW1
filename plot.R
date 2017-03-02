@@ -1,3 +1,4 @@
+#! /usr/bin/env Rscript
 library(ggplot2)
 library(gridExtra)
 library(grid)
@@ -23,6 +24,7 @@ p1 <- ggplot(data=mdf, aes(x=y1, y=y2, group = L1)) +
   xlab("Time of day") + ylab("Total bill")+
   ggtitle("Curve 1")
 
+ggsave("First.pdf", p1)
 
 d5 <- data.frame(y1=c(1,2,3,4),y2=c(4,5,6,17))
 d6 <- data.frame(y1=c(1,2,3),y2=c(6,5,14))
@@ -65,6 +67,7 @@ pltList[[3]] = p3
 pltList[[4]] = p4
 
 # plot the plots in two columns
-do.call("grid.arrange", c(pltList, ncol=2))
+pf <- do.call("grid.arrange", c(pltList, ncol=2))
+ggsave("mult.pdf", pf)
 
 
